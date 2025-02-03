@@ -1,9 +1,31 @@
+/* static/css/styles.css */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
-img {
-    margin: 10px;
+h1 {
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.masonry img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.masonry p {
+    font-size: 14px;
+    margin-top: 5px;
 }
