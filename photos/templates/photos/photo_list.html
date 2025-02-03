@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <h1>Photo Gallery</h1>
+    <a href="{% url 'upload_photo' %}">Upload New Photo</a>
+    <div>
+      {% for photo in photos %}
+      <div>
+        <img src="{{ photo.image.url }}" alt="Photo" width="200" />
+        <p>{{ photo.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
